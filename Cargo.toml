@@ -1,5 +1,3 @@
-cargo-features = ["edition"]
-
 [package]
 name = "ffsvm"
 description="A libSVM compatible support vector machine, but up to 10x faster, for games or VR."
@@ -21,9 +19,9 @@ maintenance = { status = "experimental" }
 
 
 [dependencies]
-simd_aligned = "0.1.2"
+simd_aligned = { git = "https://github.com/Tobii/simd_aligned_rust.git" }
 # simd_aligned = { path = "../simd_aligned" }
-packed_simd = "0.1"
+packed_simd = "0.3"
 rand = "0.5"
 pest = "1.0"
 pest_derive = "1.0"
